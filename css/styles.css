@@ -44,6 +44,7 @@ body {
 }
 
 .item-link.button {
+  font-size: 16px;
   color: #FFFFFF;
 }
 
@@ -208,6 +209,7 @@ body {
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hotel-card-link {
@@ -223,6 +225,10 @@ body {
   line-height: 31px;
   font-weight: 700;
   color: #000000;
+}
+
+.hotel-card-button {
+  text-decoration: none;
 }
 
 .hotel-favorites-button {
@@ -259,7 +265,6 @@ body {
 
 .pagination-current {
   color: #000000;
-  ;
   background-color: #F2F2F2;
 }
 
@@ -283,4 +288,5 @@ body {
   font-size: 20px;
   line-height: 26px;
   background-color: #83B3D3;
+  border: none;
 }
