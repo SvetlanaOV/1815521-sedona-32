@@ -196,12 +196,12 @@ body {
 }
 
 .reset-button {
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: initial;
-    border: none;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: initial;
+  border: none;
 }
 
 .results-text {
@@ -258,30 +258,29 @@ body {
 }
 
 .pagination-current {
-    color: #000000;;
-    background-color: #F2F2F2;
+  color: #000000;
+  ;
+  background-color: #F2F2F2;
 }
 
 .pagination-form-title {
-    line-height: 23px;
+  line-height: 23px;
 }
 
 .subscription-catalog-title {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
-  }
-  
-  .subscription-catalog-text {
-    font-size: 22px;
-  }
-  
-  .subscription-catalog-button {
-    font-size: 20px;
-    line-height: 26px;
-    background-color: #83B3D3;
-    border: none;
-  }
-  
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.subscription-catalog-text {
+  font-size: 22px;
+}
+
+.subscription-catalog-button {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #83B3D3;
+}
