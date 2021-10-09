@@ -20,6 +20,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   height: 100%;
 }
@@ -47,6 +48,13 @@ body {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .page-header-navigation {
@@ -87,11 +95,6 @@ body {
   flex-grow: 1;
 }
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .promo {
   background-image: url("../img/promo-background.jpg");
   background-repeat: no-repeat;
@@ -120,7 +123,8 @@ body {
   font-size: 22px;
 }
 
-.advantages-list {
+.advantages-list,
+.city-advantages {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -265,6 +269,10 @@ body {
   background-color: #83B3D3;
 }
 
+.catalog-filters-container {
+  display: flex;
+}
+
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
@@ -296,6 +304,10 @@ body {
   color: #FFFFFF;
   background-color: initial;
   border: none;
+}
+
+.results-container {
+  display: flex;
 }
 
 .results-text {
