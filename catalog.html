@@ -13,7 +13,7 @@
   <div class="main-wrapper">
     <header class="page-header">
       <nav class="page-header-navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list main-navigation">
           <li class="list-item">
             <a class="item-link" href="index.html">Главная</a>
           </li>
@@ -132,9 +132,10 @@
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </fieldset>
-
-              <button class="button filter-button" type="submit">Применить</button>
-              <button class="reset-button" type="reset">Сбросить</button>
+              <div class="filter-button-wrapper">
+                <button class="button filter-button" type="submit">Применить</button>
+                <button class="reset-button" type="reset">Сбросить</button>
+              </div>
             </div>
           </form>
 
@@ -229,49 +230,52 @@
 
         <button class="button hotel-show-more" type="button">Загрузить еще</button>
 
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
 
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-
-        <form class="pagination-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="pagination-form-title" for="pagination-form">Гостиниц на странице:</label>
-          <select class="pagination-form-select" id="pagination-form" name="pagination-form">
-            <option value="four">4</option>
-            <option value="eight">8</option>
-            <option value="twelve">12</option>
-          </select>
-          <button class="visually-hidden" type="submit">Вывести гостинец на странице</button>
-        </form>
+          <form class="pagination-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="pagination-form-title" for="pagination-form">Гостиниц на странице:</label>
+            <select class="pagination-form-select" id="pagination-form" name="pagination-form">
+              <option value="four">4</option>
+              <option value="eight">8</option>
+              <option value="twelve">12</option>
+            </select>
+            <button class="visually-hidden" type="submit">Вывести гостинец на странице</button>
+          </form>
+        </div>
       </section>
 
       <section class="subscription-catalog">
         <h2 class="subscription-catalog-title">Подпишитесь на рассылку</h2>
         <p class="subscription-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-catalog-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="subscription-catalog-email">
-            <label class="visually-hidden" for="subscription-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email"
-              required>
-          </p>
-          <button class="button subscription-catalog-button" type="submit">Подписаться</button>
+          <div class="subscription-catalog-wrapper">
+            <p class="subscription-catalog-email">
+              <label class="visually-hidden" for="subscription-email">Email</label>
+              <input class="subscription-catalog-field" placeholder="Ваш e-mail" type="email" name="subscription-email"
+                id="subscription-email" required>
+            </p>
+            <button class="button subscription-catalog-button" type="submit">Подписаться</button>
+          </div>
         </form>
       </section>
 
@@ -302,7 +306,7 @@
         </section>
 
         <a class="footer-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        <p class="about-text visually-hidden">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
       </div>
     </footer>
   </div>
