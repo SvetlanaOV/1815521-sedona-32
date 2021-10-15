@@ -137,7 +137,7 @@ body {
 }
 
 .logo-img {
-  vertical-align: bottom;
+  display: block;
 }
 
 .main-container {
@@ -149,16 +149,21 @@ body {
   background-repeat: no-repeat;
   background-color: #83B3D3;
   background-size: 100% auto;
+  padding: 51px 371px 82px 371px;
+  margin-bottom: 63px;
 }
 
 .promo-image {
+  display: block;
   text-align: center;
-  vertical-align: bottom;
-  margin: 51px 371px 82px 371px;
+}
+
+.advantages {
+  margin-bottom: 94px;
 }
 
 .advantages-header {
-  margin-top: 63px;
+  margin-top: 0;
   margin-bottom: 79px;
   line-height: 36px;
   text-align: center;
@@ -217,11 +222,8 @@ body {
   display: flex;
 }
 
-.city-advantages-item {
-  width: 400px;
-}
-
-.advantages-item-blue {
+.city-advantages-item,
+.advantages-item-blue  {
   width: 400px;
 }
 
@@ -235,25 +237,30 @@ body {
 }
 
 .advantages-title {
-  margin-top: 98px;
+  margin-top: 0;
   margin-bottom: 29px;
-  padding: 0 110px;
+  padding: 98px 110px 0 110px;
+}
+
+.advantages-decoration {
+  display: block;
+  margin-bottom: 26px;
 }
 
 .advantages-text {
-  margin-top: 26px;
+  margin-top: 0;
   margin-bottom: 77px;
   padding: 0 80px;
 }
 
 .city-advantages-title {
-  margin-top: 184px;
-  margin-bottom: 0;
-  padding: 0 110px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 184px 110px 0 110px;
 }
 
 .city-advantages-text {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 89px;
   padding: 0 75px;
 }
@@ -263,7 +270,7 @@ body {
 }
 
 .advantages-item-blue .advantages-text {
-  margin-bottom: 107px;
+  margin-bottom: 110px;
 }
 
 .advantages-decoration,
@@ -281,8 +288,8 @@ body {
 }
 
 .search-headding {
-  margin-top: 94px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -291,15 +298,15 @@ body {
 }
 
 .search-text {
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 57px;
   padding: 0 240px;
   font-size: 22px;
 }
 
 .search-button {
   width: 575px;
-  margin-top: 57px;
+  margin-top: 0;
   margin-bottom: 91px;
   padding: 12px 0 12px 0;
   font-size: 20px;
@@ -317,8 +324,9 @@ body {
 }
 
 .subscription-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   padding-top: 94px;
-  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -326,7 +334,7 @@ body {
 }
 
 .subscription-text {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 46px;
   padding: 0 340px;
   font-size: 22px;
@@ -413,16 +421,17 @@ body {
 /*Разметка страницы каталога */
 
 .filters-container {
+  margin-bottom: 44px;
   color: #FFFFFF;
   background-image: url("../img/catalog-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #83B3D3;
 }
 
 .inner-header-title {
-  margin: 0 0 0 71px;
-  padding: 25px 0 0px 0px;
+  margin: 0;
+  padding: 25px 71px 0px 71px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -431,7 +440,7 @@ body {
 .breadcrumbs {
   display: flex;
   margin: 0;
-  padding: 0 0 0 71px;
+  padding: 0 71px;
   list-style-type: none;
 }
 
@@ -445,8 +454,7 @@ body {
 
 .catalog-filters-container {
   display: flex;
-  margin-top: 45px;
-  margin-left: 71px;
+  padding: 45px 71px 0 71px;
 }
 
 .catalog-filter-group {
@@ -492,15 +500,19 @@ filter-button-wrapper {
   border: none;
 }
 
+.results-header {
+  padding: 0 71px;
+}
+
 .results-container {
   display: flex;
   align-items: center;
-  padding-top: 44px;
-  padding-bottom: 42px;
+  margin-top: 0;
+  margin-bottom: 42px;
 }
 
 .results-text {
-  margin: 0 0 0 71px;
+  margin: 0;
   padding: 0;
   font-size: 30px;
   line-height: 39px;
@@ -524,7 +536,8 @@ filter-button-wrapper {
 }
 
 .hotels-list {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
   padding: 0;
   list-style-type: none;
 }
@@ -564,7 +577,7 @@ filter-button-wrapper {
 .hotel-show-more {
   width: 625px;
   height: 55px;
-  margin: 30px 288px;
+  margin: 0 288px 30px 288px;
   font-size: 20px;
   line-height: 26px;
   background-color: #83B3D3;
@@ -629,7 +642,8 @@ filter-button-wrapper {
 }
 
 .subscription-catalog-title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -638,7 +652,7 @@ filter-button-wrapper {
 }
 
 .subscription-catalog-text {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 46px;
   padding: 0 340px;
   font-size: 22px;
