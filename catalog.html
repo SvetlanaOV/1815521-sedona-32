@@ -65,7 +65,7 @@
           <h2 class="visually-hidden">Фильтр параметров гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="catalog-filters-container">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group filters-infrastructure">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -89,7 +89,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group filters-accommodation">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -152,7 +152,7 @@
             <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
               <label class="visually-hidden" for="sorting">Сортировка</label>
               <select class="select-control" id="sorting" name="sorting">
-                <option value="cheap">Сначала дешевые</option>
+                <option value="cheap">Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
               </select>
               <button class="visually-hidden" type="submit">Применить сортировку</button>
@@ -172,8 +172,10 @@
 
         <ul class="hotels-list">
           <li class="hotel-card">
-            <a class="hotel-card-link" href="#">
+            <a class="hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="img/catalog/amara-resort-spa.jpg" width="180" height="120" alt="">
+            </a>
+            <a class="hotel-card-title-link" href="#">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="hotel-card-type">Гостиница</p>
@@ -187,8 +189,10 @@
             <p class="hotel-rating-text">Рейтинг: 8,5</p>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="#">
+            <a class="hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="img/catalog/desert-quail-inn.jpg" width="180" height="120" alt="">
+            </a>
+            <a class="hotel-card-title-link" href="#">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <p class="hotel-card-type">Мотель</p>
@@ -200,22 +204,26 @@
             <p class="hotel-rating-text">Рейтинг: 8,9</p>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="#">
+            <a class="hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="img/catalog/villas-at-poco-diabolo.jpg" width="180" height="120"
                 alt="">
+            </a>
+            <a class="hotel-card-title-link" href="#">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="hotel-card-type">Апартаменты</p>
             <span class="hotel-card-price">От 2000 ₽</span>
             <a class="button hotel-card-button" href="#">Подробнее</a>
-            <button class="button hotel-favorites-button-current" type="submit">В избранном</button>
+            <button class="button hotel-favorites-button favorites-button" type="submit">В избранном</button>
             <span class="hotel-rating"></span>
             <span class="hotel-rating"></span>
             <p class="hotel-rating-text">Рейтинг: 9,2</p>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="#">
+            <a class="hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="img/catalog/green-tree-inn.jpg" width="180" height="120" alt="">
+            </a>
+            <a class="hotel-card-title-link" href="#">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <p class="hotel-card-type">Гостиница</p>
@@ -306,7 +314,8 @@
         </section>
 
         <a class="footer-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
-        <p class="about-text visually-hidden">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        <p class="about-text visually-hidden">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
+            academy</a></p>
       </div>
     </footer>
   </div>
