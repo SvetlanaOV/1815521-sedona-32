@@ -1054,16 +1054,19 @@ body {
   color: #000000;
 }
 
-.hotel-card-title-link:hover {
+.hotel-card-title-link:hover .hotel-card-title {
   color: #756257;
 }
 
 .hotel-card-title-link:focus {
-  color: #756257;
   outline: 3px solid #83B3D3;
   outline-offset: 3px;
   border: none;
   border-radius: 10px;
+}
+
+.hotel-card-title-link:focus .hotel-card-title {
+  color: #756257;
 }
 
 .hotel-card-title-link:active {
@@ -1108,7 +1111,7 @@ body {
 .hotel-card-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #615048;
-  border: none;
+  outline: none;
   opacity: 1;
 }
 
@@ -1119,21 +1122,18 @@ body {
   background-color: #83B3D3;
 }
 
-.hotel-favorites-button:hover,
-.hotel-show-more:hover, {
+.hotel-favorites-button:hover {
   background-color: #68A2CA;
   border: 1px solid #756257;
 }
 
-.hotel-favorites-button:focus,
-.hotel-show-more:focus {
+.hotel-favorites-button:focus {
   background: #68A2CA;
   border: 3px solid #756257;
   outline: 0;
 }
 
-.hotel-favorites-button:active,
-.hotel-show-more:active {
+.hotel-favorites-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68A2CA;
   border: 1px solid #756257;
@@ -1191,7 +1191,7 @@ body {
   outline: 0;
 }
 
-.hotel-favorites-button:active {
+.favorites-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #6C9E42;
   border: 1px solid #756257;
@@ -1206,6 +1206,25 @@ body {
   line-height: 26px;
   background-color: #83B3D3;
 }
+
+.hotel-show-more:hover {
+  background-color: #68A2CA;
+  border: 1px solid #756257;
+}
+
+.hotel-show-more:focus {
+  background: #68A2CA;
+  border: 3px solid #756257;
+  outline: 0;
+}
+
+.hotel-show-more:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #68A2CA;
+  border: 1px solid #756257;
+  opacity: 1;
+}
+
 
 .pagination-container {
   display: flex;
@@ -1250,14 +1269,12 @@ body {
   outline-offset: -3px;
 }
 
-.hotel-favorites-button:active,
-.hotel-show-more:active {
+.pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68A2CA;
-  border: 1px solid #756257;
+  outline: none;
   opacity: 1;
 }
-
 
 .pagination-current {
   color: #000000;
@@ -1317,6 +1334,7 @@ body {
   padding: 22px;
   background-color: #F2F2F2;
   border: none;
+  border-radius: 10px 0 0 10px;
 }
 
 .subscription-catalog-button {
