@@ -250,12 +250,13 @@
           <p class="field-group fild-check-in">
             <label class="booking-label" for="check-in-date">Дата заезда:</label>
             <input class="booking-field test-1" type="text" id="check-in-date" name="check-in-date"
-              placeholder="27 апреля 2020 года">
+              placeholder="27 апреля 2020">
+              <span class="booking-error">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="field-group field-check-out">
             <label class="booking-label" for="check-out-date">Дата выезда:</label>
-            <input class="booking-field field" type="text" id="check-out-date" name="check-out-date"
-              placeholder="01 сентября 2021 года">
+            <input class="booking-field test-1" type="text" id="check-out-date" name="check-out-date"
+              placeholder="1 сентября 2021">
           </p>
           <p class="field-group">
             <label class="booking-label" for="booking-for-adults">Взрослые:</label>
@@ -267,7 +268,7 @@
             <button class="info" type="button">
               <span class="visually-hidden">Посмотреть дополнительную информацию</span>
             </button>
-            <input class="booking-field field" type="text" id="booking-for-kids" name="booking-for-kids"
+            <input class="booking-field test-2" type="text" id="booking-for-kids" name="booking-for-kids"
               placeholder="1">
           </p>
           <button class="booking-button button" type="submit">Найти</button>
