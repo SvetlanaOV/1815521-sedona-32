@@ -1845,7 +1845,6 @@ body {
   background-color: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-
 }
 
 .modal-booking {
@@ -1855,7 +1854,7 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 52px;
+  top: 55px;
   right: 70px;
   width: 53px;
   height: 53px;
@@ -1870,7 +1869,6 @@ body {
 
 .modal-title {
   margin-top: 0;
-
   margin-bottom: 60px;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1898,12 +1896,12 @@ body {
 
 .field-group {
   display: flex;
+  justify-content: space-between;
   margin-top: 0;
   margin-bottom: 40px;
 }
 
 .field-group:last-of-type {
-
   margin-left: 56px;
 }
 
@@ -1913,13 +1911,11 @@ body {
   font-size: 18px;
   line-height: 40px;
   color: #000000;
-  width: 150px;
   align-self: center;
 }
 
 .booking-field {
   height: 50px;
-  margin-left: 5px;
   padding: 0 19px;
   background-color: #F2F2F2;
   border: 0;
@@ -1931,13 +1927,71 @@ body {
   color: #000000;
 }
 
-.test-1 {
+.booking-date {
   width: 420px;
+  background-image: url("../img/icons/date.svg");
+  background-repeat: no-repeat;
+  background-position: center right 15px;
 }
 
-.test-2 {
+.booking-person {
   width: 133px;
   text-align: center;
+  background-image: url("../img/icons/minus.svg"), url("../img/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center left 15px, center right 15px;
+}
+
+.booking-info {
+  background-image: url("../img/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 14px;
+  margin-right: 8px;
+  width: 25px;
+  height: 25px;
+  background-color: #83B3D3;
+  border-radius: 50%;
+  border: none;
+}
+
+.popover-booking {
+  position: absolute;
+  top: 395px;
+  right: 106px;
+  z-index: 2;
+  width: 256px;
+  color: #FFFFFF;
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+}
+
+.popover-booking-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 19px 18px 22px 22px;
+  margin: 0;
+}
+
+.popover-booking::before,
+.popover-booking::after {
+  position: absolute;
+  background-color: #333333;
+  left: 120px;
+  top: -6px;
+  width: 13px;
+  height: 13px;
+  z-index: -1;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  content: '';
+}
+
+.popover-booking::before {
+  z-index: 1;
 }
 
 .booking-button {
@@ -1945,11 +1999,20 @@ body {
   height: 60px;
   background-color: #83B3D3;
   border-radius: 10px;
-
+  font-size: 20px;
 }
 
 .booking-error {
   position: absolute;
   top: 211px;
   left: 225px;
+  font-size: 16px;
+  color: #FF5757;
+}
+
+.booking-permit {
+  position: absolute;
+  top: 301px;
+  left: 225px;
+  font-size: 16px;
 }
