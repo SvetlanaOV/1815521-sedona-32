@@ -66,8 +66,8 @@
                   </li>
                   <li class="favorites-item">
                     <a class="favorites-item-link" href="#">
-                      <img class="favorites-item-image" src="img/catalog/desert-quail-inn.jpg" width="180" height="120"
-                        alt="">
+                      <img class="favorites-item-image" src="img/catalog/villas-at-poco-diabolo.jpg" width="180"
+                        height="120" alt="">
                       <h3 class="favorites-item-title">Villas at Poco Diablo</h3>
                       <p class="favorites-item-type">Апартаменты</p>
                     </a>
@@ -242,43 +242,65 @@
 
     <div class="modal modal-booking">
       <button class="modal-close-button">
+        <svg class="modal-close-image" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 4.3 15.7 3 10 8.7 4.3 3 3 4.3 8.7 10 3 15.7 4.3 17l5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7L17 4.3Z"/>
+          </svg>
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group fild-check-in">
+          <div class="field-group fild-check-in">
             <label class="booking-label" for="check-in-date">Дата заезда:</label>
             <input class="booking-field booking-date" type="text" id="check-in-date" name="check-in-date"
-              placeholder="27 апреля 2020">
-            <span class="booking-error">Мы не можем отправить вас в прошлое.</span>
-          </p>
-          <p class="field-group field-check-out">
+              placeholder="Укажите дату" value="27 апреля 2020">
+              <span class="booking-error">Мы не можем отправить вас в прошлое.</span>
+            <button class="booking-calendar" type="button">
+              <span class="visually-hidden">Открыть календарь</span>
+            </button>
+  
+          </div>
+          <div class="field-group field-check-out">
             <label class="booking-label" for="check-out-date">Дата выезда:</label>
             <input class="booking-field booking-date" type="text" id="check-out-date" name="check-out-date"
-              placeholder="1 сентября 2021">
+              placeholder="Укажите дату" value="1 сентября 2021">
+            <button class="booking-calendar" type="button">
+              <span class="visually-hidden">Открыть календарь</span>
+            </button>
             <span class="booking-permit">На эти даты есть свободные номера. Пока есть.</span>
-          </p>
-          <p class="field-group">
+          </div>
+          <div class="field-group booking-adults">
             <label class="booking-label" for="booking-for-adults">Взрослые:</label>
             <input class="booking-field booking-person" type="text" id="booking-for-adults" name="booking-for-adults"
               placeholder="2">
-          </p>
-          <p class="field-group">
+            <button class="booking-remove" type="button">
+              <span class="visually-hidden">Уменьшить колличество</span>
+            </button>
+            <button class="booking-add" type="button">
+              <span class="visually-hidden">Увеличить колличество</span>
+            </button>
+          </div>
+          <div class="field-group booking-kids">
             <label class="booking-label" for="booking-for-kids">Дети:</label>
             <button class="booking-info" type="button">
               <span class="visually-hidden">Посмотреть дополнительную информацию</span>
             </button>
+            <div class="popover-booking">
+              <p class="popover-booking-text">
+                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                размещаются бесплатно.
+              </p>
+            </div>
+
             <input class="booking-field booking-person" type="text" id="booking-for-kids" name="booking-for-kids"
               placeholder="1">
-          </p>
-          <div class="popover-booking">
-            <p class="popover-booking-text">
-              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-              размещаются бесплатно.
-            </p>
+            <button class="booking-remove" type="button">
+              <span class="visually-hidden">Уменьшить колличество</span>
+            </button>
+            <button class="booking-add" type="button">
+              <span class="visually-hidden">Увеличить колличество</span>
+            </button>
           </div>
-          
           <button class="booking-button button" type="submit">Найти</button>
 
 
