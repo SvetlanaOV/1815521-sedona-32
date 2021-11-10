@@ -242,11 +242,6 @@ img {
   text-decoration: none;
 }
 
-.logo:focus {
-  border: 0;
-  outline: none;
-}
-
 .main-container {
   flex-grow: 1;
 }
@@ -368,26 +363,26 @@ img {
 .advantages-item:nth-of-type(2) .advantages-decoration::before {
   position: absolute;
   left: 77px;
-  content: '—';
+  content: "—";
 }
 
 .advantages-item:nth-of-type(1) .advantages-decoration::after,
 .advantages-item:nth-of-type(2) .advantages-decoration::after {
   position: absolute;
   right: 78px;
-  content: '—';
+  content: "—";
 }
 
 .advantages-decoration::before {
   position: absolute;
   left: 88px;
-  content: '—';
+  content: "—";
 }
 
 .advantages-decoration::after {
   position: absolute;
   right: 88px;
-  content: '—';
+  content: "—";
 }
 
 .advantages-text {
@@ -396,8 +391,7 @@ img {
 }
 
 .advantages-img {
-  max-width: 100%;
-  object-fit: contain;
+  height: auto;
 }
 
 .city-advantages {
@@ -414,7 +408,7 @@ img {
   height: 72px;
   background-image: url("../img/icons/housing.svg");
   background-repeat: no-repeat;
-  content: '';
+  content: "";
 }
 
 .city-advantages-item:nth-of-type(2)::before {
@@ -425,7 +419,7 @@ img {
   height: 70px;
   background-image: url("../img/icons/eating.svg");
   background-repeat: no-repeat;
-  content: '';
+  content: "";
 }
 
 .city-advantages-item:nth-of-type(3)::before {
@@ -436,7 +430,7 @@ img {
   height: 76px;
   background-image: url("../img/icons/souvenir.svg");
   background-repeat: no-repeat;
-  content: '';
+  content: "";
 }
 
 .city-advantages-title {
@@ -885,7 +879,7 @@ img {
   height: 20px;
   background-color: #ffffff;
   border-radius: 4px;
-  content: '';
+  content: "";
 }
 
 .control:hover .control-label::before {
@@ -908,7 +902,7 @@ img {
   height: 20px;
   background-image: url("../img/icons/checkbox.svg");
   background-repeat: no-repeat;
-  content: '';
+  content: "";
 }
 
 .control-input[type="radio"] + .control-label::before {
@@ -1693,7 +1687,7 @@ img {
   border-left: 1px solid #e6e6e6;
   border-top: 1px solid #e6e6e6;
   transform: rotate(45deg);
-  content: '';
+  content: "";
 }
 
 .popover::before {
@@ -2112,7 +2106,7 @@ img {
   z-index: -1;
   background-color: #333333;
   transform: rotate(45deg);
-  content: '';
+  content: "";
 }
 
 .popover-booking::before {
