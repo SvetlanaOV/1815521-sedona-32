@@ -9,7 +9,9 @@
 </head>
 
 <body>
+
   <div class="main-wrapper">
+
     <header class="page-header">
       <nav class="page-header-navigation">
         <ul class="navigation-list main-navigation">
@@ -23,11 +25,9 @@
             <a class="item-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-
         <a class="logo">
           <img class="logo-img" src="img/logo.svg" width="138" height="70" alt="Логотип сайта города Седона.">
         </a>
-
         <ul class="navigation-list user-navigation">
           <li class="list-item">
             <a class="item-link" href="#">
@@ -57,7 +57,7 @@
                   <li class="favorites-item">
                     <a class="favorites-item-link" href="#">
                       <img class="favorites-item-image" src="img/catalog/desert-quail-inn.jpg" width="180" height="120"
-                        alt="">
+                        alt="Мотель Desert Quail Inn">
                       <h3 class="favorites-item-title">Desert Quail Inn</h3>
                       <p class="favorites-item-type">Мотель</p>
                     </a>
@@ -68,7 +68,7 @@
                   <li class="favorites-item">
                     <a class="favorites-item-link" href="#">
                       <img class="favorites-item-image" src="img/catalog/villas-at-poco-diabolo.jpg" width="180"
-                        height="120" alt="">
+                        height="120" alt="Апартаменты Villas at Poco Diablo">
                       <h3 class="favorites-item-title">Villas at Poco Diablo</h3>
                       <p class="favorites-item-type">Апартаменты</p>
                     </a>
@@ -77,9 +77,8 @@
                     </button>
                   </li>
                 </ul>
-
               </div>
-              <button class="button favorites-item-more" type="button">Все избранные</button>
+              <a class="favorites-item-more button" href="#">Все избранные</a>
             </div>
 
           </li>
@@ -91,6 +90,7 @@
     </header>
 
     <main class="main-index main-container">
+
       <h1 class="visually-hidden">Сайт туристического города Седона</h1>
 
       <section class="promo">
@@ -100,21 +100,20 @@
       </section>
 
       <section class="advantages">
+
         <header class="advantages-header">
           <h2 class="advantages-header-litle">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantages-header-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </header>
-        <ol class="advantages-list">
 
+        <ol class="advantages-list">
           <li class="advantages-item">
             <div class="advantages-item-container">
-
               <div class="advantages-item-wrapper">
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <span class="advantages-decoration">№1</span>
                 <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-
               <img class="advantages-img" src="img/town-view.jpg" width="800" height="384" alt="Дома города Седона.">
             </div>
             <ul class="city-advantages">
@@ -189,7 +188,6 @@
 
     <footer class="page-footer">
       <div class="page-footer-container">
-
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
@@ -225,7 +223,7 @@
           </ul>
         </section>
         <div class="footer-phone-wrapper">
-          <a class="footer-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <p class="about-text">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
@@ -242,7 +240,6 @@
   </div>
 
   <div class="modal-container modal-container-close">
-
     <div class="modal modal-booking">
       <button class="modal-close-button" type="button">
         <svg class="modal-close-image" aria-hidden="true" focusable="false" role="img" width="20" height="20" viewBox="0 0 20 20"
@@ -262,7 +259,6 @@
             <button class="booking-calendar" type="button">
               <span class="visually-hidden">Открыть календарь</span>
             </button>
-
           </div>
           <div class="field-group field-check-out">
             <label class="booking-label" for="check-out-date">Дата выезда:</label>
@@ -295,7 +291,6 @@
                 размещаются бесплатно.
               </p>
             </div>
-
             <input class="booking-field booking-person" type="text" id="booking-for-kids" name="booking-for-kids"
               placeholder="1">
             <button class="booking-remove" type="button">
@@ -306,8 +301,6 @@
             </button>
           </div>
           <button class="booking-button button" type="submit">Найти</button>
-
-
         </form>
       </section>
     </div>

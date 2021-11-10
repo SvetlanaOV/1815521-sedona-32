@@ -149,7 +149,6 @@ img {
 .item-link.button:focus {
   background-color: #615048;
   border: 3px solid #83b3d3;
-  border-radius: 8px;
   outline: 0;
 }
 
@@ -1741,6 +1740,7 @@ img {
   margin-right: 17px;
   border-radius: 24px;
   align-self: center;
+  object-fit: cover;
 }
 
 .favorites-item-title {
@@ -1795,7 +1795,7 @@ img {
   position: absolute;
   left: -1px;
   width: 400px;
-  height: 60px;
+  padding: 20px;
   border-radius: 0 0 20px 20px;
 }
 
@@ -1805,8 +1805,9 @@ img {
 
 .favorites-item-more:focus {
   background-color: #615048;
-  border: 3px solid #83b3d3;
-  outline: none;
+  border: none;
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
 }
 
 .favorites-item-more:active {
@@ -1950,8 +1951,7 @@ img {
 
 .booking-field:active {
   background-color: #ffffff;
-  border: 2px solid #000000;
-  outline: none;
+  outline: 2px solid #000000;
 }
 
 .booking-date {
@@ -2072,7 +2072,16 @@ img {
 }
 
 .booking-info:focus {
-  outline: none;
+  outline: 3px solid #68a2ca;
+}
+
+.booking-info:focus + .popover-booking {
+  display: block;
+}
+
+.booking-info:active {
+  background-color: #68a2ca;
+  opacity: 0.6;
 }
 
 .popover-booking {
@@ -2115,7 +2124,7 @@ img {
 
 .booking-button {
   grid-column: 1 / -1;
-  height: 60px;
+  padding: 20px;
   font-size: 20px;
   background-color: #83b3d3;
   border-radius: 10px;
