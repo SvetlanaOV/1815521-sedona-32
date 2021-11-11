@@ -827,6 +827,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 45px 71px 81px;
+  line-height: 23px;
 }
 
 
@@ -850,10 +851,6 @@ img {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-}
-
-.catalog-filter {
-  line-height: 23px;
 }
 
 .catalog-filter-list {
@@ -1767,7 +1764,6 @@ img {
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-
 }
 
 .favorites-item-button {
