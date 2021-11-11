@@ -332,7 +332,6 @@ img {
 
 .city-advantages-item,
 .advantages-item-blue {
-  flex-grow: 1;
   width: 400px;
 }
 
@@ -497,6 +496,7 @@ img {
   border: 0;
   border-radius: 10px;
   outline: 3px solid #83b3d3;
+  outline-offset: 0;
 }
 
 .search-button:active {
@@ -548,9 +548,10 @@ img {
 
 .subscription-field {
   width: 600px;
-  padding: 19px 22px;
+  padding: 18px 22px;
   font-family: inherit;
   font-size: 18px;
+  line-height: 26px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 10px 0 0 10px;
@@ -822,7 +823,7 @@ img {
 
 /*Чекбоксы*/
 
-.catalog-filters-container {
+.catalog-filter {
   display: flex;
   flex-wrap: wrap;
   padding: 45px 71px 81px;
@@ -1129,18 +1130,15 @@ img {
 }
 
 .results-header {
-  margin-top: 0;
-  margin-bottom: 40px;
-  padding: 0 71px;
-}
-
-.results-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   margin-top: 0;
+  margin-bottom: 40px;
+  padding: 0 71px;
 }
+
 
 .results-text {
   max-width: 400px;
@@ -1322,6 +1320,7 @@ img {
   grid-row: 3 / 4;
   margin: 0;
   padding: 0;
+  line-height: 23px;
 }
 
 .hotel-card-price {
@@ -1358,7 +1357,9 @@ img {
 }
 
 .hotel-favorites-button {
+  display: block;
   width: 160px;
+  padding: 8px;
   grid-column: 4 / 5;
   grid-row: 4 / 5;
   background-color: #83b3d3;
@@ -1366,12 +1367,14 @@ img {
 
 .hotel-favorites-button:hover {
   background-color: #68a2ca;
-  border: 1px solid #756257;
+  outline: 1px solid #756257;
+  outline-offset: 0;
 }
 
 .hotel-favorites-button:focus {
   background-color: #68a2ca;
   outline: 3px solid #756257;
+  outline-offset: 0;
 }
 
 .hotel-favorites-button:active {
@@ -1423,19 +1426,18 @@ img {
 
 .favorites-button:hover {
   background-color: #6c9e42;
-  border: 1px solid #756257;
+  outline: 1px solid #756257;
 }
 
 .favorites-button:focus {
   background: #6c9e42;
-  border: 3px solid #756257;
-  outline: 0;
+  outline: 3px solid #756257;
 }
 
 .favorites-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #6c9e42;
-  border: 1px solid #756257;
+  outline: 1px solid #756257;
   opacity: 1;
 }
 
@@ -1443,6 +1445,7 @@ img {
   width: 625px;
   height: 55px;
   margin: 0 288px 30px 288px;
+  padding: 15px;
   font-size: 20px;
   line-height: 26px;
   background-color: #83b3d3;
@@ -1450,19 +1453,19 @@ img {
 
 .hotel-show-more:hover {
   background-color: #68a2ca;
-  border: 1px solid #756257;
+  outline: 1px solid #756257;
 }
 
 .hotel-show-more:focus {
   background-color: #68a2ca;
-  border: 3px solid #756257;
-  outline: 0;
+  outline: 3px solid #756257;
+  outline-offset: 0;
 }
 
 .hotel-show-more:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
-  border: 1px solid #756257;
+  outline: 1px solid #756257;
   opacity: 1;
 }
 
@@ -1597,9 +1600,10 @@ img {
 
 .subscription-catalog-field {
   width: 600px;
-  padding: 19px 22px;
+  padding: 18px 22px;
   font-family: inherit;
   font-size: 18px;
+  line-height: 26px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 10px 0 0 10px;
@@ -1627,7 +1631,7 @@ img {
   outline-offset: -2px;
 }
 
-.eror {
+.error {
   background-color: #ffffff;
   outline: 2px solid #ff5757;
   outline-offset: -2px;
@@ -1761,8 +1765,9 @@ img {
   grid-row: 2 / 3;
   margin: 0;
   font-size: 16px;
-  color: #333333;
   line-height: 21px;
+  color: #333333;
+
 }
 
 .favorites-item-button {
@@ -1900,7 +1905,7 @@ img {
   grid-template-columns: 288px 286px;
 }
 
-.fild-check-in {
+.field-check-in {
   grid-column: 1 / -1;
 }
 
@@ -2003,7 +2008,7 @@ img {
 .booking-remove {
   position: absolute;
   left: 239px;
-  bottom: 183px;
+  top: 353px;
   width: 25px;
   height: 25px;
   background-image: url("../img/icons/minus.svg");
@@ -2020,7 +2025,7 @@ img {
 .booking-add {
   position: absolute;
   left: 320px;
-  bottom: 183px;
+  top: 353px;
   width: 25px;
   height: 25px;
   background-image: url("../img/icons/plus.svg");
@@ -2126,8 +2131,9 @@ img {
 
 .booking-button {
   grid-column: 1 / -1;
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
+  line-height: 40px;
   background-color: #83b3d3;
   border-radius: 10px;
 }
@@ -2151,15 +2157,17 @@ img {
 
 .booking-error {
   position: absolute;
-  top: 211px;
+  top: 205px;
   left: 225px;
   font-size: 16px;
+  line-height: 40px;
   color: #ff5757;
 }
 
 .booking-permit {
   position: absolute;
-  top: 301px;
+  top: 295px;
   left: 225px;
   font-size: 16px;
+  line-height: 40px;
 }

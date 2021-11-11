@@ -57,7 +57,7 @@
                   <li class="favorites-item">
                     <a class="favorites-item-link" href="#">
                       <img class="favorites-item-image" src="img/catalog/desert-quail-inn.jpg" width="180" height="120"
-                        alt="Мотель Desert Quail Inn">
+                        alt="Мотель Desert Quail Inn.">
                       <h3 class="favorites-item-title">Desert Quail Inn</h3>
                       <p class="favorites-item-type">Мотель</p>
                     </a>
@@ -68,7 +68,7 @@
                   <li class="favorites-item">
                     <a class="favorites-item-link" href="#">
                       <img class="favorites-item-image" src="img/catalog/villas-at-poco-diabolo.jpg" width="180"
-                        height="120" alt="Апартаменты Villas at Poco Diablo">
+                        height="120" alt="Апартаменты Villas at Poco Diablo.">
                       <h3 class="favorites-item-title">Villas at Poco Diablo</h3>
                       <p class="favorites-item-type">Апартаменты</p>
                     </a>
@@ -166,7 +166,7 @@
         <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
           Седоне
         </p>
-        <button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
+        <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscription">
@@ -242,8 +242,8 @@
   <div class="modal-container modal-container-close">
     <div class="modal modal-booking">
       <button class="modal-close-button" type="button">
-        <svg class="modal-close-image" aria-hidden="true" focusable="false" role="img" width="20" height="20" viewBox="0 0 20 20"
-          fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="modal-close-image" aria-hidden="true" focusable="false" role="img" width="20" height="20"
+          viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 4.3 15.7 3 10 8.7 4.3 3 3 4.3 8.7 10 3 15.7 4.3 17l5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7L17 4.3Z" />
         </svg>
         <span class="visually-hidden">Закрыть</span>
@@ -251,10 +251,10 @@
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="field-group fild-check-in">
+          <div class="field-group field-check-in">
             <label class="booking-label" for="check-in-date">Дата заезда:</label>
             <input class="booking-field booking-date" type="text" id="check-in-date" name="check-in-date"
-              placeholder="Укажите дату" value="27 апреля 2020">
+              placeholder="Укажите дату" value="27 апреля 2020" required>
             <span class="booking-error">Мы не можем отправить вас в прошлое.</span>
             <button class="booking-calendar" type="button">
               <span class="visually-hidden">Открыть календарь</span>
@@ -263,7 +263,7 @@
           <div class="field-group field-check-out">
             <label class="booking-label" for="check-out-date">Дата выезда:</label>
             <input class="booking-field booking-date" type="text" id="check-out-date" name="check-out-date"
-              placeholder="Укажите дату" value="1 сентября 2021">
+              placeholder="Укажите дату" value="1 сентября 2021" required>
             <button class="booking-calendar" type="button">
               <span class="visually-hidden">Открыть календарь</span>
             </button>
@@ -272,7 +272,7 @@
           <div class="field-group booking-adults">
             <label class="booking-label" for="booking-for-adults">Взрослые:</label>
             <input class="booking-field booking-person" type="text" id="booking-for-adults" name="booking-for-adults"
-              placeholder="2">
+              placeholder="2" required>
             <button class="booking-remove" type="button">
               <span class="visually-hidden">Уменьшить колличество</span>
             </button>
